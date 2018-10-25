@@ -59,8 +59,8 @@ def error_json_to_xlsx(path,xlsxpath,list_js,list,error,start,end,n):
 #input()
 
     for person in list_js:#将加载的json数据添加到personData列表中
-        list.append(personData.personData(person['name'],person['ID'],person['phone'],person['cardnumber'],person['helpPerson'],person['helpPerson_phone'],person['suoyin'],person['edit'],person['error']))
-        if not(person['edit']):
+        list.append(personData.personData(person['ID'],person['o1'],person['o2'],person['o3'],person['o4'],person['o5'],person['o6'],person['b1'],person['b2'],person['b3'],person['b4'],person['b5'],person['b6'],person['b7'],person['b8'],person['b9'],person['b10'],person['b11'],person['b12'],person['b13'],person['b14'],person['b15'],person['b16'],person['b17'],person['b18'],person['b19'],person['b20'],person['b21'],person['error'],person['state'],person['log']))
+        if not(person['state']):
             if person['error']:
                 error+=1
             start+=1
@@ -72,7 +72,7 @@ def error_json_to_xlsx(path,xlsxpath,list_js,list,error,start,end,n):
     input()
 
     for person in list_js:
-        if not(person['edit']):
+        if not(person['state']):
             if person['error']:
                 list.append(person)
                 error+=1
@@ -80,7 +80,7 @@ def error_json_to_xlsx(path,xlsxpath,list_js,list,error,start,end,n):
         else:
             end+=1
         n+=1
-    print("总共%s项,%s项已完成，%s项待完成,其中%s项出错,按任意键导出到excel文件"% (n,end,start,error))
+    print("总共%s项,%s项已完成，%s项待完成,其中%s项出错,按任意键退出"% (n,end,start,error))
     input()
 
 

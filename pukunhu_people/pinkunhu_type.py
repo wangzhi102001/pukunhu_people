@@ -279,6 +279,7 @@ for p1 in list_poor_family:
         time.sleep(0.5)
         driver.find_element_by_xpath(
                     my.xpath28).click()
+        p1.show_edit()
         # 户基础信息修改完毕
         continue
 

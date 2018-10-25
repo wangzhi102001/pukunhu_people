@@ -44,7 +44,7 @@ class personData():
         self.print_log()
     
     def show_edit(self):
-        self.edit = True
+        self.state = True
         self.add_log_finish()
         self.print_log()
 
@@ -54,7 +54,7 @@ class personData():
         self.print_log()
 
     def end(self):
-        self.edit = True
+        self.state = True
         
         self.print_log()
 
@@ -75,7 +75,7 @@ class personData():
 
     def add_log_finish(self):
 
-        self.log = "完成，%s,%s,%s,%s已将结对帮扶人 %s 录入系统。"% (datetime.now(),self.suoyin,self.name,self.ID,self.helpPerson)
+        self.log = "完成，%s,%s,%s,%s 录入系统。"% (datetime.now(),self.ID,self.o4,self.o5)
     
     def add_log_editdate(self):
 
