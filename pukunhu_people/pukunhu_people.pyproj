@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a0633062-27a8-4f77-9e52-4d72731971d3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pukunhu_people.py</StartupFile>
+    <StartupFile>pinkunhu_type.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="pukunhu_people.py" />
+    <Compile Include="exceltojson.py" />
+    <Compile Include="familyData.py" />
+    <Compile Include="fangfa.py" />
+    <Compile Include="personData.py" />
+    <Compile Include="pinkunhu_type.py" />
+    <Compile Include="setting.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
